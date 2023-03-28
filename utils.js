@@ -19,4 +19,6 @@ function getDicePlaceholderHtml(diceCount){
     }).join('')
 }
 
-export {getDiceRollArray, getDicePlaceholderHtml}
+const getPercentage =  (maximumHealth,remainingHealth)=> (100 *remainingHealth)/ maximumHealth
+
+export {getDiceRollArray, getDicePlaceholderHtml, getPercentage}
